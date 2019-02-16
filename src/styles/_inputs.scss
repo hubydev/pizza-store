@@ -1,0 +1,11 @@
+@import "./variables";
+
+.input {
+  width: 260px;
+  height: 30px;
+  padding: 0 10px;
+
+  &:focus {
+    outline: 0 !important;
+  }
+}

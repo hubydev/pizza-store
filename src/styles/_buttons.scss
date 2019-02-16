@@ -1,3 +1,5 @@
+@import "./variables";
+
 .btn {
   display: flex;
   justify-content: center;
@@ -36,6 +38,22 @@
     &:active:focus {
       background-color: #282828;
       border: 1px solid #282828;
+      transition: all 250ms;
+    }
+  }
+
+  &-store {
+    @extend .btn;
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: #ffffff;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+      background-color: $primary-dark-color;
+      border: 1px solid $primary-dark-color;
       transition: all 250ms;
     }
   }
