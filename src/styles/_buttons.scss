@@ -1,0 +1,46 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 250ms;
+
+  &-facebook {
+    @extend .btn;
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+    color: #ffffff;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+      background-color: #34528e;
+      border: 1px solid #34528e;
+      transition: all 250ms;
+    }
+  }
+
+  &-github {
+    @extend .btn;
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #ffffff;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus {
+      background-color: #282828;
+      border: 1px solid #282828;
+      transition: all 250ms;
+    }
+  }
+
+  &:focus {
+    outline: 0 !important;
+  }
+}
