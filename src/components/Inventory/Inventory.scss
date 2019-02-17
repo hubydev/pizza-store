@@ -1,0 +1,7 @@
+@import "../../styles/variables";
+
+.inventory {
+  flex: 2;
+  background-color: blue;
+  border: 10px double $border-color;
+}

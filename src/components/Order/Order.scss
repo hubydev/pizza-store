@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+
+.order {
+  flex: 1;
+  background-color: purple;
+  border-top: 10px double $border-color;
+  border-bottom: 10px double $border-color;
+}
