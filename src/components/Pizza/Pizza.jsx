@@ -5,18 +5,15 @@ class Pizza extends React.Component {
   render() {
     return (
       <li className="pizza">
-        {/* <img src={image} alt={name} />
+        <div className="pizza-img">
+          <img src="/images/greek.png" alt="greek" />
+        </div>
         <h3 className="pizza-name">
-          {name}
-          <span className="pizza-price"></span>
+          Greek
+          <span className="pizza-price">$10.00</span>
         </h3>
-        <p>{desc}</p>
-        <button
-          disabled={!isAvailable}
-          onClick={() => this.props.addToOrder(this.props.index)}
-        >
-          {isAvailable ? "Add To Order" : "Sold Out!"}
-        </button> */}
+        <p className="pizza-desc">I am a pizza description</p>
+        <button className="btn-order">ADD TO ORDER</button>
       </li>
     );
   }

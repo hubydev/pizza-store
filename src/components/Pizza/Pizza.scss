@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.pizza {
+  border-bottom: 1px solid $border-color;
+  padding: 20px 0;
+  overflow: hidden;
+
+  &-img {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-right: 15px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+  }
+
+  &-price {
+    margin: 0;
+    justify-content: flex-end;
+  }
+
+  &-desc {
+    margin: 5px 0 0 0;
+    height: 95px;
+  }
+
+  &-add {
+    align-items: flex-end;
+  }
+}
